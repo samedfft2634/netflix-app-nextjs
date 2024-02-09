@@ -3,16 +3,18 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { useAuthContext } from "@/context/AuthContext";
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(" ");
 }
 
 const Navbar = () => {
+	const { currentUser } = useAuthContext();
 	const [showBackground, setShowBackground] = useState(false);
-    const logOut = ()=>{
-        return {}
-    }
+	const logOut = () => {
+		return {};
+	};
 	const menuItems = [
 		{ text: "Register", href: "/register" },
 		{ text: "Login", href: "/login" },
@@ -36,8 +38,6 @@ const Navbar = () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
-
-	const currentUser = { displayName: "Samuel Merrado" };
 
 	return (
 		<>

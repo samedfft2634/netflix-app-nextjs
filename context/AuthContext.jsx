@@ -48,6 +48,7 @@ const AuthContextProvider = ({ children }) => {
 			console.log(userCredential);
 		} catch (err) {
 			toastErrorNotify(err.message);
+			console.error(err)
 			// alert(err.message);
 		}
 	};

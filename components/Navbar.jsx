@@ -12,15 +12,20 @@ function classNames(...classes) {
 const Navbar = () => {
 	const { currentUser } = useAuthContext();
 	const [showBackground, setShowBackground] = useState(false);
-	const logOut = () => {
-		return {};
-	};
-	const menuItems = [
-		{ text: "Register", href: "/register" },
-		{ text: "Login", href: "/login" },
-		{ text: "Profile", href: "/profile" },
-		{ text: "Log out", onClick: logOut, isButton: true },
-	];
+	let menuItems; 
+
+	if (currentUser) {
+		menuItems = [
+			{ text: "Profile", href: "/profile" },
+			{ text: "Log out", onClick: logOut, isButton: true },
+		];
+	} else {
+		menuItems = [
+			{ text: "Register", href: "/register" },
+			{ text: "Login", href: "/login" },
+		];
+	}
+
 	useEffect(() => {
 		const handleScroll = () => {
 			// console.log(window.scrollY);

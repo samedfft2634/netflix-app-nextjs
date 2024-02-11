@@ -4,7 +4,7 @@ import GoogleIcon from "@/public/icons/GoogleIcon";
 import React, { useState } from "react";
 
 const Register = () => {
-	const {createUser} = useAuthContext()
+	const {createUser,signUpProvider} = useAuthContext()
 	const [info, setInfo] = useState({
 		firstName: "",
 		lastName: "",
@@ -85,6 +85,7 @@ const Register = () => {
 							<button
 								className="flex justify-between text-center items-center btn-danger"
 								type="button"
+								onClick={signUpProvider}
 							>
 								Continue with Google
 								<GoogleIcon color="currentColor" />

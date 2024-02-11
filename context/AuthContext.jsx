@@ -75,6 +75,7 @@ const AuthContextProvider = ({ children }) => {
 	const logOut = ()=>{
 		signOut(auth)
 		toastSuccessNotify("Logged out successfully!")
+		router.push("/")
 	}
 	const userObserver = ()=>{
 		onAuthStateChanged(auth,(currentUser)=>{

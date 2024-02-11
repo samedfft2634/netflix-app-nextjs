@@ -10,9 +10,9 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
-	const { currentUser } = useAuthContext();
+	const { currentUser, logOut } = useAuthContext();
 	const [showBackground, setShowBackground] = useState(false);
-	let menuItems; 
+	let menuItems;
 
 	if (currentUser) {
 		menuItems = [

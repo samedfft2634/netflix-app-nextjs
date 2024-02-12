@@ -2,8 +2,8 @@ import { useRouter } from "next/navigation";
 
 const ProfileCard = ({ img, name, image, i }) => {
     const router = useRouter();
-    console.log("i:", i);
-    console.log("image:", image);
+    // console.log("i:", i);
+    // console.log("image:", image);
 
     return (
         <div className="w-44 mx-auto cursor-pointer" onClick={() => router.push("/movies")}>

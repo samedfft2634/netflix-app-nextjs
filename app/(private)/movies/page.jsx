@@ -2,7 +2,6 @@ import { getMovies } from "@/helpers/movieFunctions";
 import HeroSection from "./components/HeroSection";
 import MovieSection from "./components/MovieSection";
 
-
 export const metadata = {
 	title: "Movies",
 	description: "Movies Page.",
@@ -27,8 +26,8 @@ const titles = [
 	},
 ];
 const Movies = async () => {
-    const movies = await getMovies("now_playing");
-   
+	const movies = await getMovies("now_playing");
+
 	return (
 		<>
 			<HeroSection
@@ -36,7 +35,7 @@ const Movies = async () => {
 				title={movies[0]?.title}
 				overview={movies[0]?.overview}
 			/>
-			{titles.map((item,i) => (
+			{titles.map((item, i) => (
 				<div className="px-4 md:px-12 mt-4" key={i}>
 					<MovieSection title={item.title} type={item.type} />
 				</div>

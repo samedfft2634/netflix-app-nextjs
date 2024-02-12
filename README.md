@@ -5,7 +5,7 @@
 
   <h3 align="center">Netflix Movie App</h3>
   <p align="center">
-    <a href="https://netflix-app-nextjs-sigma.vercel.app/"><strong>🚀 Click Here for Live Demo 🚀 »</strong></a>
+    <a href="https://movie-app-nextjs-sigma.vercel.app/"><strong>🚀 Click Here for Live Demo 🚀 »</strong></a>
     <br />
   </p>
 </div>
@@ -48,6 +48,6 @@ Movie App is a web application developed using Next.js. This application provide
 ## 📞 Contact
 
 Samed Fent: samed.fent1@gmail.com <br>
-Project Link: <a href="https://netflix-app-nextjs-sigma.vercel.app/">Live</a> <br><br>
+Project Link: <a href="https://movie-app-nextjs-sigma.vercel.app/">Live</a> <br><br>
 [🗂 View My Other Projects](https://github.com/samedfft2634?tab=repositories) <br><br>
 <a href="#readme-top">⏫ Back to Top ⏫</a>
